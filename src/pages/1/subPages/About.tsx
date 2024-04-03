@@ -5,16 +5,6 @@ import { useRef } from "react"
 import { Link } from "react-router-dom"
 import TextHover from "../components/TextHover"
 
-const h2Styles = {
-    fontSize: '3rem',
-    whiteSpace: 'pre-wrap',
-    fontWeight: 'bold',
-    lineHeight: '3rem'
-}
-const pStyles = {
-    fontSize: '1rem',
-}
-
 const About = () => {
     const scope = useRef<HTMLDivElement>(null)
 
@@ -48,12 +38,12 @@ const About = () => {
                 </div>
             </section>
             <section className="mt-[105vh] max-w-[950px] pb-[40vh] px-8 bg-transparent flex flex-col justify-center items-center text-center space-y-10" >
-                <h2 style={h2Styles}>INDEPENDANT DESIGNER &amp; DIRECTOR WORKING FOR AGENCIES AND BRANDS WORLDWIDE</h2>
-                <p style={pStyles}>PAST EXPERIENCE<br />DESIGN DIRECTOR AT WORK AND CO, BROOKLYN ASSOCIATE DESIGN<br />DIRECTOR AT CODE AND THEORY,NEW YORK<br />CREATIVE LEAD AT DOMANI STUDIOS, NEW YORK</p>
-                <h2 style={h2Styles}>BRANDING, DESIGN, MOTION, PRODUCT, DIRECTION, UX STRATEGY</h2>
-                <p style={pStyles}>CLIENTS INCLUDE<br />ADIDAS, APPLE, BMW, CNN, CHASE, COMCAST, DEAN AND DELUCA, EQUINOX, GIVENCHY, HARLEY-DAVIDSON, IKEA, HILTON, JP MORGAN, LUXURY BRAND PARTNERS, MARRIOTT HOTELS, MERCEDES-BENZ, MC DONALDS, MINI, NBC, NEW ENGLAND AQUARIUM, NIKE, NINTENDO, SHAKE SHACK, UNDER ARMOUR</p>
-                <h2 style={h2Styles}>ALWAYS PUTS AN EMPHASIS ON CREATING MEMORABLE EXPERIENCE THAT TRANSCENDS OBJECTIVES</h2>
-                <ul className="space-y-5">
+                <h2 className="font-bold text-2xl sm:text-4xl md:text-5xl whitespace-pre-wrap">INDEPENDANT DESIGNER &amp; DIRECTOR WORKING FOR AGENCIES AND BRANDS WORLDWIDE</h2>
+                <p className="text-sm opacity-70">PAST EXPERIENCE<br />DESIGN DIRECTOR AT WORK AND CO, BROOKLYN ASSOCIATE DESIGN<br />DIRECTOR AT CODE AND THEORY,NEW YORK<br />CREATIVE LEAD AT DOMANI STUDIOS, NEW YORK</p>
+                <h2 className="font-bold text-2xl sm:text-4xl md:text-5xl whitespace-pre-wrap">BRANDING, DESIGN, MOTION, PRODUCT, DIRECTION, UX STRATEGY</h2>
+                <p className="text-sm opacity-70">CLIENTS INCLUDE<br />ADIDAS, APPLE, BMW, CNN, CHASE, COMCAST, DEAN AND DELUCA, EQUINOX, GIVENCHY, HARLEY-DAVIDSON, IKEA, HILTON, JP MORGAN, LUXURY BRAND PARTNERS, MARRIOTT HOTELS, MERCEDES-BENZ, MC DONALDS, MINI, NBC, NEW ENGLAND AQUARIUM, NIKE, NINTENDO, SHAKE SHACK, UNDER ARMOUR</p>
+                <h2 className="font-bold text-2xl sm:text-4xl md:text-5xl whitespace-pre-wrap">ALWAYS PUTS AN EMPHASIS ON CREATING MEMORABLE EXPERIENCE THAT TRANSCENDS OBJECTIVES</h2>
+                <ul className="space-y-5 text-sm">
                     <li>Fast Company - Finalist in Retail and Fashion Categories<br />For Givenchy / November 2022</li>
                     <li>Webby Awards - Nominee in Corporate Communication<br />For Givenchy / November 2022</li>
                     <li>Indigo Awards - Gold in Digital Design 2022<br />For Givenchy / January 2022</li>
@@ -72,8 +62,8 @@ const About = () => {
                     <li>Site of the Day - AWWWARDS<br />For GC WATCHES / JULY 2013</li>
                     <li>Site of the Day - FWA<br />FAR FROM THE TREE / FEBRUARY 2013</li>
                 </ul>
-                <h2 style={h2Styles}>*</h2>
-                <h2 style={h2Styles}>OPEN FOR ENQUIRIES <br />REACH OUT</h2>
+                <h2 className="font-bold text-2xl sm:text-4xl md:text-5xl whitespace-pre-wrap">*</h2>
+                <h2 className="font-bold text-2xl sm:text-4xl md:text-5xl whitespace-pre-wrap">OPEN FOR ENQUIRIES <br />REACH OUT</h2>
             </section >
         </section >
 
