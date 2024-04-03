@@ -11,33 +11,34 @@ import About from './pages/1/subPages/About';
 import Contact from './pages/1/subPages/Contact';
 import { gsapLoader } from './pages/1/components/gsapLoader';
 import App from './App';
-
+let baseUrl = 'https://animation-pratice.vercel.app'
 const router = createBrowserRouter([
   // project 1 
   {
-    path: '/',
+    path: baseUrl,
     element: <App />,
+    errorElement: 'Not Found',
   },
   {
-    path: "/1",
+    path: `${baseUrl}/1`,
     errorElement: 'No Page Located',
     children: [
       {
-        path: "/1",
+        path: `${baseUrl}/1`,
         element: <Project1 >
           <Home />
         </Project1>,
         loader: gsapLoader
       },
       {
-        path: "/1/about",
+        path: `${baseUrl}/1/about`,
         element: <Project1 >
           <About />
         </Project1>,
         loader: gsapLoader
       },
       {
-        path: "/1/contact",
+        path: `${baseUrl}/1/contact`,
         element: <Project1 >
           <Contact />
         </Project1>,
